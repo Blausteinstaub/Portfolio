@@ -1,9 +1,9 @@
 *{
     text-transform: uppercase;
-    user-select: none;
+    /* user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
-    -webkit-user-select: none;
+    -webkit-user-select: none; */
     font-family: 'Silkscreen', cursive;
 }
 
@@ -212,4 +212,35 @@ nav ul li a:hover::after{
     padding: 1rem;
     padding-bottom: 0;
     color: white;
+}
+.collapsible {
+    background-color: #022;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .active {
+    background-color: #007070;
+  }
+  
+  .collapsible:hover {
+      background-color: #009898;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #022;
+    color: white;
+  }
+
+a{
+    text-decoration: none;
 }

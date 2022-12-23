@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bengt | Projects</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" href="../assets/icon.ico">
+    <style>
+        #nav2{
+            background-color: lightblue;
+            margin-left: 2%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="nav1"><a style="color: white;" href="..">&nbsp; home</a></li>
+            <li id="nav2"><a style="color: black;" href="./">&nbsp; Projekts</a></li>
+            <li id="nav3"><a style="color: white;" href="../3/">&nbsp; 3</a></li>
+            <li id="nav4"><a style="color: white;" href="../4/">&nbsp; 4</a></li>
+            <li id="nav5"><a style="color: white;" href="../5/">&nbsp; 5</a></li> 
+        </ul>
+    </nav>
+    <p style="font-size: .1rem;">­</p>
+    <div class="con">
+        <div class="wrapper">
+            <button type="button" class="collapsible">NOTION HIGHLIGHTS</button>
+            <div class="content" style="display: none;">
+                <p>With this Node.js project you can transfer your kindle highlights to notion. I created this for my mom.<br><br><a href="https://github.com/Blausteinstaub/Notion-Highlights/" target="_blank" rel="noopener noreferrer">Github</a></p>
+            </div>
+            <p style="font-size: .1rem;">­</p>
+            
+            <button type="button" class="collapsible">HACKING SIMULATOR</button>
+            <div class="content" style="display: none;">
+                <p>Maby I delete this... I realy dont like it. Maby I have to do a compleate makeover... The Github Repo is Private because I don't know if I will keep it.</p>
+            </div>
+            <p style="font-size: .1rem;">­</p>
+            
+            <button type="button" class="collapsible">GET SHEPHERD</button>
+            <div class="content" style="display: none;">
+                <p>I created this to get my dad to buy a Australian Shepherd. It didn't work.<br><br><a href="https://github.com/Blausteinstaub/GetShepherd/" target="_blank" rel="noopener noreferrer">Github</a></p>
+            </div>
+            <p style="font-size: .1rem;">­</p>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
